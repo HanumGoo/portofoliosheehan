@@ -17,6 +17,15 @@
     height: 50% !important;
 }
 
+.customCreateGit {
+    flex-direction: column !important;
+}
+
+.customCreateGit a{
+    font-size: 1.5rem !important;
+    
+}
+
 }
 
 p {
@@ -822,4 +831,15 @@ span{
     flex: 0.5;
   white-space: nowrap;
   font-weight: 500;
+}
+
+
+
+
+.customCreateGit {
+
+    display: flex;
+    gap: 20px;
+    text-align: center;
+
 }
