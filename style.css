@@ -11,6 +11,14 @@
 }
 
 
+@media screen and (max-width: 600px) {
+
+.typing-text span::after{
+    height: 50% !important;
+}
+
+}
+
 p {
     font-size: 1.6em;
     line-height: 1.5;
