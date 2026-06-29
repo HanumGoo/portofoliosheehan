@@ -1,255 +1,79 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-    
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sheehan Andya portfolio - software engineer focused on .NET, C#, backend systems, scripting, and automation tools.">
+  <meta name="theme-color" content="#f1c40f">
+  <title>Sheehan Andya | Software Engineer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23050505'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' font-family='Arial,sans-serif' font-size='26' font-weight='800' fill='%23f1c40f'%3ESH%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">SH</a>
-
-        <nav class="navbar">
-            <a href="#home" class="active"> Home</a>
-            <a href="#services" >Services</a>
-            <a href="#skills" >Skills</a>
-            <a href="#education" >Education</a>
-            <a href="#experience" >Experience</a>
-            <a href="#projects" >Projects</a>
-            <a href="#contact" >Contact</a>
-            
-        </nav>
+  <div class="page-shell">
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Sheehan Andya home">
+        <span class="brand-mark">SH</span>
+        <span class="brand-copy">
+          <strong>Sheehan Andya</strong>
+          <small>C# .NET Developer</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="site-nav" data-nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
-    <section class="home" id="home">
-        <div class="home-img">
-            <img class="imageMain" src="./mainSecond3.png" alt="error">
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Available for any C# .NET engineering roles</p>
+          <h2>Building reliable automation, backend logic, and web tools using C# .NET with a clean engineering mindset.</h2>
+          <p class="hero-summary">I am Sheehan Andya, a .NET and C# focused software engineer with experience turning repetitive business workflows into structured, maintainable applications and scripts.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:sheehanandya001@gmail.com"><i class="fa-solid fa-envelope"></i>Contact Me</a>
+            <a class="btn btn-secondary" href="./CV ATS - FSD - Sheehan AndyaLSNew.pdf" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-arrow-down"></i>Resume</a>
+          </div>
+          <div class="social-list" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/sheehanandya" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/HanumGoo" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/sheehandy_?igsh=MTZ3dmszaThwYXhhag==" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/6289637288051" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
         </div>
-        <div class="home-content">
-            <h1>Hi, I am <span>Sheehan</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>With over two years of experience, I build <strong>.NET</strong> software application that blends logic and creativity.
-    I work both as a <strong>Software Engineer</strong> and a <strong>Script Engineer</strong> — crafting clean, scalable code and building automation to make systems smarter and more efficient.</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/sheehanandya" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/HanumGoo" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/sheehandy_?igsh=MTZ3dmszaThwYXhhag==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://wa.me/6289637288051" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-            <div class="customCreateGit">
-            <a href="mailto:sheehanandya001@gmail.com" class="btn ">Contact Me <i class="fa-solid fa-envelope"></i></a>
-            <a href="./CV ATS - FSD - Sheehan AndyaLSNew.pdf" target="_blank" class="btn ">Resume <i class="fa-regular fa-paper-plane"></i></a>
-            </div>
-           
+        <div class="hero-visual reveal">
+          <div class="portrait-frame"><img src="./mainSecond3.png" alt="Portrait of Sheehan Andya"></div>
+          <div class="availability-card"><span class="status-dot"></span><div><strong>Core focus</strong><p>.NET, C#, backend, automation, Excel tooling</p></div></div>
+          <div class="metric-strip" aria-label="Portfolio highlights">
+            <div><strong>1+</strong><span>Years Experience</span></div>
+            <div><strong>4.00</strong><span>Bootcamp GPA</span></div>
+            <div><strong>C2</strong><span>English EF SET</span></div>
+          </div>
         </div>
-    </section>
-    <section class="services" id="services">
-    <h2 class="section-title">My <span>Services</span></h2>
-    <div class="services-container">
-        <div class="service-box">
-            <i class="fa-solid fa-code"></i>
-            <h3>.ASP Web Development</h3>
-            <p>Building responsive websites and web apps using clean, efficient, and scalable code with modern technologies.</p>
-        </div>
-        <div class="service-box">
-            <i class="fa-solid fa-terminal"></i>
-            <h3>Script Engineering</h3>
-            <p>Automating repetitive tasks and improving system workflows through powerful scripting solutions.</p>
-        </div>
-        <div class="service-box">
-            <i class="fa-solid fa-laptop-code"></i>
-            <h3>Automation Software Development</h3>
-            <p>Designing and developing desktop and backend applications tailored to business needs and goals.</p>
-        </div>
-    </div>
-</section>
-<section class="skills" id="skills">
-    <h2 class="section-title">My <span>Skills</span></h2>
-    <div class="skills-container">
-        <div class="skill-box">
-            <i class="fa-solid fa-html5"></i>
-            <h3>HTML & CSS</h3>
-            <p>Crafting semantic, accessible HTML and styling with modern, responsive CSS for clean UIs.</p>
-        </div>
-        <div class="skill-box">
-            <i class="fa-brands fa-js-square"></i>
-            <h3>JavaScript</h3>
-            <p>Building dynamic, interactive front-end experiences and client-side logic with vanilla JS and frameworks.</p>
-        </div>
-        <div class="skill-box">
-            <i class="fa-brands devicon-csharp-plain"></i>
-            <h3>C#</h3>
-            <p>Building robust applications and tools with C# for desktop with a scripting purpose</p>
-        </div>
-        <div class="skill-box">
-            <i class="fa-brands devicon-csharp-plain"></i>
-            <h3>.NET</h3>
-            <p>Building desktop applications and tools with C# for desktop and backend development.</p>
-        </div>
-        <div class="skill-box">
-            <i class="fa-brands devicon-csharp-plain"></i>
-            <h3>Excel Specialist (ClosedXML)</h3>
-            <p>create/add or even manipulate excel data using automation logic for RPA purpose.</p>
-        </div>
-        <div class="skill-box">
-            <i class="fa-solid fa-database"></i>
-            <h3>MySQL & Databases</h3>
-            <p>Designing efficient schemas, writing queries, and managing data securely and reliably.</p>
-        </div>
-        <div class="skill-box">
-            <i class="fa-brands fa-node-js"></i>
-            <h3>Node.js</h3>
-            <p>Creating fast, scalable back-end APIs and applications using JavaScript on the server.</p>
-        </div>
-        <div class="skill-box">
-        <i class="fa-brands fa-react"></i>
-        <h3>React</h3>
-        <p>Developing fast and scalable web interfaces using reusable components and modern React features like hooks.</p>
-        </div>
-        <div class="skill-box">
-        <i class="fa-solid fa-server"></i>
-        <h3>Express</h3>
-        <p>Creating backend APIs with Express.js, handling routing, middleware, and RESTful endpoints efficiently.</p>
-        </div>        
-        <div class="skill-box">
-            <i class="fa-solid fa-gear"></i>
-            <h3>Scripting & Automation</h3>
-            <p>Automating workflows and systems using batch scripts, PowerShell, and custom utilities.</p>
-        </div>
-    </div>
-</section>
-<section class="education educationCustom" id="education">
-    <h2 class="section-title">My <span>Education & Certificate</span></h2>
-    <div class="education-container">
-        <div class="education-box">
-            <i class="fa-solid fa-graduation-cap"></i>
-            <h3>Harisenin BootCamp FSD</h3>
-            <span class="edu-date">Des 2024 - May 2025</span>
-            
-        <a href="https://drive.google.com/file/d/1O9wZX_3hTZXxLTN85lGO6rsSWTsYQPn5/view" target="_blank"><img src="/folder experience and sertifikat/sertifikat.png" class="imageProject"/></a>
-    <p>Full-Stack Developer Bootcamp GPA 4.00/4.00</p>    
-    </div>
-        <div class="education-box">
-            <i class="fa-solid fa-school"></i>
-            <h3>English Certificate</h3>
-            <span class="edu-date">2019 - 2022</span>
-            <a href="https://cert.efset.org/id/1iQPJR" target="_blank"><img src="/folder experience and sertifikat/sertifikat bahasa inggris v2.png" class="imageProject"/></a>
-            <p>English Subject Test 74/100 C2</p>
-        </div>
-    </div>
-</section>
-<section class="experience" id="experience">
-    <h2 class="section-title">My <span>Experience</span></h2>
-    <div class="experience-container">
-        <div class="experience-box">
-    <i class="fa-solid fa-file-invoice-dollar"></i>
-    <h3>Staff Tax & Automation Developer</h3>
-    <span class="experience-date">Jan 2023 – Des 2024</span>
-    <p>Handled administrative and tax-related tasks while introducing automation to streamline workflows. Developed custom scripts to eliminate repetitive processes and built desktop applications for querying and retrieving financial data efficiently.</p>
-</div>
-
-<div class="experience-box">
-    <i class="fa-solid fa-computer"></i>
-    <h3>Freelance Software Engineer</h3>
-    <span class="experience-date">Nov 2024 – Feb 2025</span>
-    <p>Created desktop automation tools in C# for tasks such as automated logins and data processing. Engineered applications to simplify access to structured data and implemented live data displays for real-time feedback and monitoring.</p>
-</div>
-<div class="experience-box">
-    <i class="fa-solid fa-computer"></i>
-    <h3>Automation Engineer</h3>
-    <span class="experience-date">May 2025 – July 2025</span>
-    <p>Developed a desktop application and script automation tools in C# to extract and transform massal data into a customized relational Excel format. Implemented functionality to accept clipboard input and structure it into a predefined Excel schema.</p>
-</div>
-    </div>
-</section>
-<section class="projects" id="projects">
-    <h2 class="section-title">My <span>Projects</span></h2>
-    <div class="services-container">
-        <div class="service-box">
-            <i class="fa-solid fa-globe"></i>
-            <h3>Excel Format Creation</h3>
-            <p>Create a custom Excel Format and automatically add the relational data using script. <strong>Because of an agreement between client and workers, can't share the source code.</strong></p>
-        </div>
-        <div class="service-box">
-            <i class="fa-solid fa-globe"></i>
-            <h3>Film Website</h3>
-            <a href="https://chill-react-git-io.vercel.app/login" target="_blank"><img src="/folder experience and sertifikat/websitechill.png" class="imageProject"/></a>
-        </div>
-        <div class="service-box">
-            <i class="fa-brands fa-js-square"></i>
-            <h3>To Do List Pure JS</h3>
-            <a href="https://hanumgoo.github.io/todolist-hanumgoo.git.io/" target="_blank"><img src="/folder experience and sertifikat/todolist.png" class="imageProject"/></a>
-        </div>
-        <div class="service-box">
-            <i class="fa-brands fa-js-square"></i>
-            <h3>Excel Automation Script</h3>
-            <p>A custom desktop script-application to handle large excel data process from spesific folder. <strong>Because of an agreement between client and workers, can't share the source code.</strong></p>
-        </div>
-        <div class="service-box">
-            <i class="fa-solid fa-robot"></i>
-            <h3>C# Project VLOOKUP</h3>
-            <p>A custom desktop script-application bot to handle data process from database using full C# .NET Windows Forms App. <strong>Because of an agreement between client and workers, can't share the source code.</strong></p>
-        </div>
-        <div class="service-box">
-            <i class="fa-solid fa-robot"></i>
-            <h3>DJP Online & E-Faktur Automation Project</h3>
-            <p>A custom desktop script-application bot to handle data process import from database to E-Faktur Format with challange #NotepadDatabase. <strong>Because of an agreement between client and workers, can't share the source code.</strong></p>
-        </div>
-        <div class="service-box">
-            <i class="fa-solid fa-robot"></i>
-            <h3>C# Extract Data from PDF to structured design</h3>
-            <p>Complete structural .pdf format using complex arithmetic to extract data into structured form. <strong>Because of an agreement between client and workers, can't share the source code.</strong></p>
-        </div>
-        
-    </div>
-</section>
-<section class="contact" id="contact">
-    <h2 class="section-title">Get In <span>Touch</span></h2>
-    <div class="contact-container">
-        <form action="mailto:sheehanandya001@gmail.com" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
-        </form>
-        <div class="contact-socials">
-            <p>Or reach me via:</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/sheehanandya" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/HanumGoo" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/sheehandy_?igsh=MTZ3dmszaThwYXhhag==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://wa.me/6289637288051" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="mailto:sheehanandya001@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                
-            </div>
-        </div>
-    </div>
-</section>
-<footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-center">
-      © 2025 All rights reserved.
-    </div>
-    <div class="footer-right">
-      Developed by Sheehan Andya
-    </div>
+      </section>
+      <section class="section intro-band reveal" aria-label="Professional summary"><p>My strongest lane is C#/.NET automation, supported by full-stack fundamentals and practical database experience.</p></section>
+      <section class="section" id="services"><div class="section-heading reveal"><p class="eyebrow">What I can deliver</p><h2>Engineering services for practical business problems.</h2></div><div class="card-grid feature-grid" data-render="services"></div></section>
+      <section class="section skills-section" id="skills"><div class="section-heading reveal"><p class="eyebrow">Technical stack</p><h2>Tools I use to ship maintainable solutions.</h2></div><div class="skills-layout"><div class="skill-cloud reveal" data-render="skills"></div><div class="stack-panel reveal"><h3>Best fit roles</h3><ul><li>Junior / Associate Software Engineer</li><li>.NET Developer</li><li>Backend Developer</li><li>Automation Engineer</li><li>Script Engineer</li></ul></div></div></section>
+      <section class="section" id="experience"><div class="section-heading reveal"><p class="eyebrow">Experience</p><h2>From tax workflows to custom automation software.</h2></div><div class="timeline" data-render="experience"></div></section>
+      <section class="section" id="projects"><div class="section-heading reveal"><p class="eyebrow">Selected work</p><h2>My Projects</h2></div><div class="project-grid" data-render="projects"></div></section>
+      <section class="section" id="education"><div class="section-heading reveal"><p class="eyebrow">Education & certificates</p><h2>My Educations & Certificates</h2></div><div class="credential-grid" data-render="credentials"></div></section>
+      <section class="section contact-section" id="contact"><div class="contact-panel reveal"><div><p class="eyebrow">Contact</p><h2>Call me in!</h2><p>Send a quick message for software engineering, backend, automation, or .NET opportunities.</p><div class="contact-links"><a href="mailto:sheehanandya001@gmail.com"><i class="fa-solid fa-envelope"></i> sheehanandya001@gmail.com</a><a href="https://wa.me/6289637288051" target="_blank" rel="noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a><a href="https://www.linkedin.com/in/sheehanandya" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></div></div><form class="contact-form" data-contact-form><label><span>Name</span><input type="text" name="name" placeholder="Your name" required></label><label><span>Email</span><input type="email" name="email" placeholder="your@email.com" required></label><label><span>Message</span><textarea name="message" rows="5" placeholder="Tell me about the role or project" required></textarea></label><button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i>Send Message</button></form></div></section>
+    </main>
+    <footer class="site-footer"><p>&copy; <span data-year></span> Sheehan Andya. All rights reserved.</p><a href="#home">Back to top</a></footer>
   </div>
-</footer>
-<script>
-  const navLinks = document.querySelectorAll('.navbar a');
-
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      // Remove active class from all links
-      navLinks.forEach(l => l.classList.remove('active'));
-
-      // Add active class to clicked link
-      link.classList.add('active');
-    });
-  });
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
