@@ -252,7 +252,13 @@ h3 { font-size: 1.2rem; }
 .timeline-item { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 24px; }
 .timeline-date { color: var(--accent-strong); font-size: 0.9rem; font-weight: 850; text-transform: uppercase; }
 
-.project-card { display: grid; min-height: 100%; gap: 16px; }
+.project-card {
+  display: grid;
+  min-height: 100%;
+  gap: 16px;
+  align-content: start;
+  grid-auto-rows: max-content;
+}
 .project-media { overflow: hidden; border: 1px solid rgba(241, 196, 15, 0.16); border-radius: var(--radius); background: #080808; }
 .project-media img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; transition: transform 240ms ease; }
 .project-card:hover .project-media img { transform: scale(1.03); }
