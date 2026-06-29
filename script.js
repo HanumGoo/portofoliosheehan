@@ -57,7 +57,7 @@ const content = {
   projects: [
     {
       title: "KPOP Website",
-      description: "A WinForm Apps that is for managing windows title and memory across all targeted applications.",
+      description: "A static website for Knight Pious Of Powerful Clan in Roblox (Dueling Grounds).",
       tags: ["HTML", "CSS", "Javascript", "Vercel"],
       image: "./folder experience and sertifikat/Kpopweb.png",
       link: "https://kpopz.vercel.app/"
