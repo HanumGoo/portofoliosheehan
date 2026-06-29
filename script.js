@@ -23,6 +23,7 @@ const content = {
   skills: [
     ["devicon-csharp-plain", "C#"],
     ["devicon-dotnetcore-plain", ".NET"],
+    ["fa-solid fa-database", "Entity Framework"],
     ["fa-solid fa-database", "MySQL"],
     ["devicon-postgresql-plain", "PostgreSQL"],
     ["devicon-microsoftsqlserver-plain", "SQL Server"],
