@@ -63,22 +63,22 @@ const content = {
     },
     {
       title: "ID Card Maker",
-      description: "A WinForm Apps that is for managing windows title and memory across all targeted applications.",
-      tags: ["C#", "ASP .NET", "QuestPDF", "ClosedXML"],
+      description: "An ASP.NET MVC Website that is for generate massal ID Card based on relational data (Excel, XML, CSV).",
+      tags: ["C#", "ASP.NET", "QuestPDF", "ClosedXML"],
       image: "./folder experience and sertifikat/Idcardmaker.png",
       link: "https://github.com/HanumGoo/IDCardMaker"
     },
     {
       title: "Invoice Maker",
-      description: "A WinForm Apps that is for managing windows title and memory across all targeted applications.",
-      tags: ["C#", "ASP .NET", "QuestPDF", "ClosedXML"],
+      description: "An ASP.NET MVC Website that is for generate massal Invoice sells based on relational data (Excel, XML, CSV).",
+      tags: ["C#", "ASP.NET", "QuestPDF", "ClosedXML"],
       image: "./folder experience and sertifikat/InvoiceMaker.png",
       link: "https://github.com/HanumGoo/InvoiceMaker"
     },
     {
       title: "Book App",
-      description: "A WinForm Apps that is for managing windows title and memory across all targeted applications.",
-      tags: ["C#"],
+      description: "An ASP.NET MVC Website DEMO that is for managing books sell, applying logics to admin editing & customer.",
+      tags: ["C#", "ASP.NET"],
       image: "./folder experience and sertifikat/Bookapp.png",
       link: "https://github.com/HanumGoo/Bulky_MVC_NewTest"
     },
