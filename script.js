@@ -73,8 +73,8 @@ const content = {
       title: "Invoice Maker",
       description: "An ASP.NET MVC Website that is for generate massal Invoice sells based on relational data (Excel, XML, CSV).",
       tags: ["C#", "ASP.NET", "QuestPDF", "ClosedXML"],
-      image: "./folder experience and sertifikat/InvoiceMaker.png",
-      link: "https://github.com/HanumGoo/Invoicemaker"
+      image: "./folder experience and sertifikat/Invoicemaker.png",
+      link: "https://github.com/HanumGoo/InvoiceMaker"
     },
     {
       title: "Book App",
