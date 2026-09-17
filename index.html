@@ -18,10 +18,10 @@
   <div class="page-shell">
     <header class="site-header" data-header>
       <a class="brand" href="#home" aria-label="Sheehan Andya home">
-        <span class="brand-mark">SH</span>
+        <span class="brand-mark" data-bind="brandMark">SH</span>
         <span class="brand-copy">
-          <strong>Sheehan Andya</strong>
-          <small>C# .NET Developer</small>
+          <strong data-bind="brandName">Sheehan Andya</strong>
+          <small data-bind="brandRole">C# .NET Developer</small>
         </span>
       </a>
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
@@ -40,15 +40,15 @@
     <main>
       <section class="hero section" id="home">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Available for any C# .NET engineering roles</p>
-          <h2>Sheehan Andya</h2>
-          <h3>C# .NET Developer</h3>
-          <p class="hero-summary"><i>Building reliable automation, backend logic, and web tools using C# .NET with a clean engineering mindset</i>.</p>
+          <p class="eyebrow" data-bind="heroEyebrow">Available for any C# .NET engineering roles</p>
+          <h2 data-bind="heroName">Sheehan Andya</h2>
+          <h3 data-bind="heroRole">C# .NET Developer</h3>
+          <p class="hero-summary" data-bind="heroSummary"><i>Building reliable automation, backend logic, and web tools using C# .NET with a clean engineering mindset</i>.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:sheehanandya001@gmail.com"><i class="fa-solid fa-envelope"></i>Contact Me</a>
-            <a class="btn btn-secondary" href="./CV ATS - FSD - Sheehan AndyaLSNew.pdf" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-arrow-down"></i>Resume</a>
+            <a class="btn btn-primary" data-bind="heroContactBtn" href="mailto:sheehanandya001@gmail.com"><i class="fa-solid fa-envelope"></i>Contact Me</a>
+            <a class="btn btn-secondary" data-bind="heroResumeBtn" href="./CV ATS - FSD - Sheehan Andya.pdf" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-arrow-down"></i>Resume</a>
           </div>
-          <div class="social-list" aria-label="Social links">
+          <div class="social-list" aria-label="Social links" data-render="socials">
             <a href="https://www.linkedin.com/in/sheehanandya" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="https://github.com/HanumGoo" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.instagram.com/sheehandy_?igsh=MTZ3dmszaThwYXhhag==" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -56,25 +56,26 @@
           </div>
         </div>
         <div class="hero-visual reveal">
-          <div class="portrait-frame"><img src="./mainSecond3.png" alt="Portrait of Sheehan Andya"></div>
-          <div class="availability-card"><span class="status-dot"></span><div><strong>Core focus</strong><p>.NET, C#, backend, automation, Excel tooling</p></div></div>
-          <div class="metric-strip" aria-label="Portfolio highlights">
+          <div class="portrait-frame" data-render="portrait"><img src="./mainSecond3.png" alt="Portrait of Sheehan Andya"></div>
+          <div class="availability-card" data-render="statusCard"><span class="status-dot"></span><div><strong>Core focus</strong><p>.NET, C#, backend, automation, Excel tooling</p></div></div>
+          <div class="metric-strip" aria-label="Portfolio highlights" data-render="metrics">
             <div><strong>1+</strong><span>Years Experience</span></div>
             <div><strong>4.00</strong><span>Bootcamp GPA</span></div>
             <div><strong>C2</strong><span>English EF SET</span></div>
           </div>
         </div>
       </section>
-      <section class="section intro-band reveal" aria-label="Professional summary"><p>My strongest lane is C#/.NET automation, supported by full-stack fundamentals and practical database experience.</p></section>
+      <section class="section intro-band reveal" aria-label="Professional summary" data-render="introBand"><p>My strongest lane is C#/.NET automation, supported by full-stack fundamentals and practical database experience.</p></section>
       <section class="section" id="services"><div class="section-heading reveal"><p class="eyebrow">What I can deliver</p><h2>Engineering services for practical business problems.</h2></div><div class="card-grid feature-grid" data-render="services"></div></section>
-      <section class="section skills-section" id="skills"><div class="section-heading reveal"><p class="eyebrow">Technical stack</p><h2>Tools I use to ship maintainable solutions.</h2></div><div class="skills-layout"><div class="skill-cloud reveal" data-render="skills"></div><div class="stack-panel reveal"><h3>Best fit roles</h3><ul><li>Junior / Associate Software Engineer</li><li>.NET Developer</li><li>Backend Developer</li><li>Automation Engineer</li><li>Script Engineer</li></ul></div></div></section>
+      <section class="section skills-section" id="skills"><div class="section-heading reveal"><p class="eyebrow">Technical stack</p><h2>Tools I use to ship maintainable solutions.</h2></div><div class="skills-layout"><div class="skill-cloud reveal" data-render="skills"></div><div class="stack-panel reveal"><h3>Best fit roles</h3><ul data-render="bestFitRoles"><li>Junior / Associate Software Engineer</li><li>.NET Developer</li><li>Backend Developer</li><li>Automation Engineer</li><li>Script Engineer</li></ul></div></div></section>
       <section class="section" id="experience"><div class="section-heading reveal"><p class="eyebrow">Experience</p><h2>From tax workflows to custom automation software.</h2></div><div class="timeline" data-render="experience"></div></section>
       <section class="section" id="projects"><div class="section-heading reveal"><p class="eyebrow">Selected work</p><h2>My Projects</h2></div><div class="project-grid" data-render="projects"></div></section>
       <section class="section" id="education"><div class="section-heading reveal"><p class="eyebrow">Education & certificates</p><h2>My Educations & Certificates</h2></div><div class="credential-grid" data-render="credentials"></div></section>
-      <section class="section contact-section" id="contact"><div class="contact-panel reveal"><div><p class="eyebrow">Contact</p><h2>Call me in!</h2><p>Send a quick message for software engineering, backend, automation, or .NET opportunities.</p><div class="contact-links"><a href="mailto:sheehanandya001@gmail.com"><i class="fa-solid fa-envelope"></i> sheehanandya001@gmail.com</a><a href="https://wa.me/6289637288051" target="_blank" rel="noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a><a href="https://www.linkedin.com/in/sheehanandya" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></div></div><form class="contact-form" data-contact-form><label><span>Name</span><input type="text" name="name" placeholder="Your name" required></label><label><span>Email</span><input type="email" name="email" placeholder="your@email.com" required></label><label><span>Message</span><textarea name="message" rows="5" placeholder="Tell me about the role or project" required></textarea></label><button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i>Send Message</button></form></div></section>
+      <section class="section contact-section" id="contact"><div class="contact-panel reveal"><div><p class="eyebrow">Contact</p><h2>Call me in!</h2><p>Send a quick message for software engineering, backend, automation, or .NET opportunities.</p><div class="contact-links" data-render="contactLinks"><a href="mailto:sheehanandya001@gmail.com"><i class="fa-solid fa-envelope"></i> sheehanandya001@gmail.com</a><a href="https://wa.me/6289637288051" target="_blank" rel="noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a><a href="https://www.linkedin.com/in/sheehanandya" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></div></div><form class="contact-form" data-contact-form><label><span>Name</span><input type="text" name="name" placeholder="Your name" required></label><label><span>Email</span><input type="email" name="email" placeholder="your@email.com" required></label><label><span>Message</span><textarea name="message" rows="5" placeholder="Tell me about the role or project" required></textarea></label><button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i>Send Message</button></form></div></section>
     </main>
-    <footer class="site-footer"><p>&copy; <span data-year></span> Sheehan Andya. All rights reserved.</p><a href="#home">Back to top</a></footer>
+    <footer class="site-footer"><p>&copy; <span data-year></span> <span data-bind="copyrightName">Sheehan Andya</span>. All rights reserved.</p><a href="#home">Back to top</a></footer>
   </div>
+  <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,170 +1,18 @@
-﻿const profile = {
-  email: "sheehanandya001@gmail.com",
-};
+/**
+ * ====================================================================
+ * PORTFOLIO APPLICATION LOGIC
+ * ====================================================================
+ * Reads from window.portfolioConfig (config.js) and hydrates the DOM.
+ */
 
+const config = window.portfolioConfig || {};
+const profile = config.profile || {};
 const content = {
-  services: [
-    {
-      icon: "fa-solid fa-code",
-      title: ".NET Web & App Development",
-      description: "Build clean web, backend, and desktop applications with practical architecture and maintainable C#/.NET code."
-    },
-    {
-      icon: "fa-solid fa-terminal",
-      title: "Script Engineering",
-      description: "Automate repetitive workflows with scripts, utilities, and data-processing logic that reduce manual effort."
-    },
-    {
-      icon: "fa-solid fa-gears",
-      title: "Business Process Automation",
-      description: "Turn tax, finance, Excel, PDF, and database workflows into structured tools teams can rely on daily."
-    }
-  ],
-  skills: [
-    ["devicon-csharp-plain", "C#"],
-    ["devicon-dotnetcore-plain", ".NET"],
-    ["fa-solid fa-database", "Entity Framework"],
-    ["fa-solid fa-database", "MySQL"],
-    ["devicon-postgresql-plain", "PostgreSQL"],
-    ["devicon-microsoftsqlserver-plain", "SQL Server"],
-    ["fa-solid fa-file-excel", "ClosedXML / Excel Automation"],
-    ["fa-brands fa-js", "JavaScript"],
-    ["fa-brands fa-html5", "HTML"],
-    ["fa-brands fa-css3-alt", "CSS"],
-    ["fa-brands fa-react", "React"],
-    ["fa-brands fa-node-js", "Node.js"],
-    ["fa-solid fa-server", "Express"],
-    ["fa-solid fa-robot", "RPA Logic"],
-    ["fa-solid fa-bolt", "PowerShell & Batch"]
-  ],
-  experience: [
-    {
-      date: "May 2025 - Jul 2025",
-      title: "Automation Engineer",
-      description: "Developed C# desktop and script automation tools to extract high-volume data and transform it into customized relational Excel formats, including clipboard-based input flows and predefined Excel schemas."
-    },
-    {
-      date: "Nov 2024 - Feb 2025",
-      title: "Freelance Software Engineer",
-      description: "Created desktop automation tools for login flows, data processing, structured data access, and live monitoring displays with real-time feedback."
-    },
-    {
-      date: "Jan 2023 - Dec 2024",
-      title: "Staff Tax & Automation Developer",
-      description: "Handled tax and administrative workflows while introducing automation scripts and desktop applications to query, retrieve, and process financial data more efficiently."
-    }
-  ],
-  projects: [
-    {
-      title: "KPOP Website",
-      description: "A static website for Knight Pious Of Powerful Clan in Roblox (Dueling Grounds).",
-      tags: ["HTML", "CSS", "Javascript", "Vercel"],
-      image: "./folder experience and sertifikat/Kpopweb.png",
-      link: "https://kpopz.vercel.app/"
-    },
-    {
-      title: "ID Card Maker",
-      description: "An ASP.NET MVC Website that is for generate massal ID Card based on relational data (Excel, XML, CSV).",
-      tags: ["C#", "ASP.NET", "QuestPDF", "ClosedXML"],
-      image: "./folder experience and sertifikat/Idcardmaker.png",
-      link: "https://github.com/HanumGoo/IDCardMaker"
-    },
-    {
-      title: "Invoice Maker",
-      description: "An ASP.NET MVC Website that is for generate massal Invoice sells based on relational data (Excel, XML, CSV).",
-      tags: ["C#", "ASP.NET", "QuestPDF", "ClosedXML"],
-      image: "./folder experience and sertifikat/Invoicemaker.png",
-      link: "https://github.com/HanumGoo/InvoiceMaker"
-    },
-    {
-      title: "Book App",
-      description: "An ASP.NET MVC Website DEMO that is for managing books sell, applying logics to admin editing & customer.",
-      tags: ["C#", "ASP.NET"],
-      image: "./folder experience and sertifikat/Bookapp.png",
-      link: "https://github.com/HanumGoo/Bulky_MVC_NewTest"
-    },
-    {
-      title: "Process Forge",
-      description: "A WinForm Apps that is for managing windows title and memory across all targeted applications.",
-      tags: ["C#"],
-      image: "./folder experience and sertifikat/Processforge.png",
-      link: "https://github.com/HanumGoo/Process-Forge"
-    },
-    {
-      title: "Piano Roblox Midi Converter",
-      description: "A lightweight WinForm Apps that is for converting Midi Output to Piano Roblox Input.",
-      tags: ["C#", "NAudio API"],
-      image: "./folder experience and sertifikat/Midiconverter.png",
-      link: "https://github.com/HanumGoo/Piano-Roblox-Midi-Converter"
-    },
-    {
-      title: "To Do List Pure JS",
-      description: "A lightweight task manager built with vanilla JavaScript, HTML, and CSS.",
-      tags: ["JavaScript", "HTML", "CSS"],
-      image: "./folder experience and sertifikat/todolist.png",
-      link: "https://hanumgoo.github.io/todolist-hanumgoo.git.io/"
-    },
-    {
-      title: "Film Website",
-      description: "A React film web interface with authentication screen and content browsing experience.",
-      tags: ["React", "CSS", "Vercel"],
-      image: "./folder experience and sertifikat/websitechill.png",
-      link: ""
-    },
-    {
-      title: "Excel Format Creation",
-      description: "Custom Excel format generator that maps relational data into a business-ready spreadsheet structure. Source code is private due to client agreement.",
-      tags: ["C#", "Excel", "Automation"],
-      icon: "fa-solid fa-file-excel"
-    },
-    {
-      title: "Excel Automation Script",
-      description: "Desktop script application for processing large Excel data from specific folders. Source code is private due to client agreement.",
-      tags: ["C#", "ClosedXML", "Batch Processing"],
-      icon: "fa-solid fa-folder-tree"
-    },
-    {
-      title: "C# VLOOKUP Data Bot",
-      description: "Windows Forms automation bot for database-driven data processing and lookup workflows. Source code is private due to client agreement.",
-      tags: ["C#", ".NET", "Database"],
-      icon: "fa-solid fa-magnifying-glass-chart"
-    },
-    {
-      title: "DJP Online & E-Faktur Automation",
-      description: "Automation tool for importing database records into E-Faktur format and handling difficult Notepad-style data sources.",
-      tags: ["Automation", "Tax", "Data Transform"],
-      icon: "fa-solid fa-receipt"
-    },
-    {
-      title: "PDF Data Extraction Tool",
-      description: "C# utility that applies structural parsing and arithmetic rules to extract PDF content into organized output formats.",
-      tags: ["C#", "PDF", "Data Extraction"],
-      icon: "fa-solid fa-file-lines"
-    }
-  ],
-  credentials: [
-    {
-      title: "Full-Stack Developer Intership",
-      date: "August 2025 - September 2025",
-      description: "Full-stack internship program completed with Final Score 75.00",
-      image: "./folder experience and sertifikat/internship.png",
-      link: "https://drive.google.com/file/d/1BAlT6DcUB9z6OE3HOwP-q11Wqdke2XkU/view?usp=drive_link"
-    },
-    {
-      title: "Full-Stack Developer Bootcamp",
-      date: "Dec 2024 - May 2025",
-      description: "Full-stack developer bootcamp completed with GPA 4.00/4.00.",
-      image: "./folder experience and sertifikat/sertifikat.png",
-      link: "https://drive.google.com/file/d/1O9wZX_3hTZXxLTN85lGO6rsSWTsYQPn5/view"
-    },
-    {
-      title: "EF SET English Certificate",
-      date: "2019 - 2022",
-      description: "EF English Subject Test score 74/100, C2 level.",
-      image: "./folder experience and sertifikat/sertifikat bahasa inggris v2.png",
-      link: "https://cert.efset.org/id/1iQPJR"
-    }
-  ]
+  services: config.services || [],
+  skills: config.skills || [],
+  experience: config.experience || [],
+  projects: config.projects || [],
+  credentials: config.credentials || []
 };
 
 const selectors = {
@@ -178,8 +26,120 @@ const selectors = {
 const iconFallback = "fa-solid fa-layer-group";
 const iconClass = (icon) => icon || iconFallback;
 
+/**
+ * Hydrate profile, hero, brand, social links, metrics, and best-fit roles
+ */
+function renderProfile() {
+  if (!profile) return;
+
+  // Header Brand
+  const brandMark = document.querySelector('[data-bind="brandMark"]');
+  if (brandMark && profile.initials) brandMark.textContent = profile.initials;
+
+  const brandName = document.querySelector('[data-bind="brandName"]');
+  if (brandName && profile.name) brandName.textContent = profile.name;
+
+  const brandRole = document.querySelector('[data-bind="brandRole"]');
+  if (brandRole && profile.role) brandRole.textContent = profile.role;
+
+  // Hero Copy
+  const heroEyebrow = document.querySelector('[data-bind="heroEyebrow"]');
+  if (heroEyebrow && profile.eyebrow) heroEyebrow.textContent = profile.eyebrow;
+
+  const heroName = document.querySelector('[data-bind="heroName"]');
+  if (heroName && profile.name) heroName.textContent = profile.name;
+
+  const heroRole = document.querySelector('[data-bind="heroRole"]');
+  if (heroRole && profile.role) heroRole.textContent = profile.role;
+
+  const heroSummary = document.querySelector('[data-bind="heroSummary"]');
+  if (heroSummary && profile.summary) heroSummary.innerHTML = `<i>${profile.summary}</i>`;
+
+  // Hero Actions
+  const contactBtn = document.querySelector('[data-bind="heroContactBtn"]');
+  if (contactBtn && profile.email) contactBtn.setAttribute("href", `mailto:${profile.email}`);
+
+  const resumeBtn = document.querySelector('[data-bind="heroResumeBtn"]');
+  if (resumeBtn && profile.resumeUrl) resumeBtn.setAttribute("href", profile.resumeUrl);
+
+  // Social Links
+  const socialsContainer = document.querySelector('[data-render="socials"]');
+  if (socialsContainer && profile.socials) {
+    socialsContainer.innerHTML = profile.socials.map((social) => `
+      <a href="${social.url}" target="_blank" rel="noreferrer" aria-label="${social.platform}">
+        <i class="${social.icon}"></i>
+      </a>
+    `).join("");
+  }
+
+  // Hero Portrait Image
+  const portraitFrame = document.querySelector('[data-render="portrait"]');
+  if (portraitFrame && profile.avatar) {
+    portraitFrame.innerHTML = `<img src="${profile.avatar}" alt="Portrait of ${profile.name || 'Sheehan Andya'}">`;
+  }
+
+  // Hero Status / Core Focus Card
+  const statusCard = document.querySelector('[data-render="statusCard"]');
+  if (statusCard && profile.statusCard) {
+    statusCard.innerHTML = `
+      <span class="status-dot"></span>
+      <div>
+        <strong>${profile.statusCard.title}</strong>
+        <p>${profile.statusCard.description}</p>
+      </div>
+    `;
+  }
+
+  // Hero Metrics Strip
+  const metricsStrip = document.querySelector('[data-render="metrics"]');
+  if (metricsStrip && profile.metrics) {
+    metricsStrip.innerHTML = profile.metrics.map((m) => `
+      <div><strong>${m.value}</strong><span>${m.label}</span></div>
+    `).join("");
+  }
+
+  // Intro Band Summary
+  const introBand = document.querySelector('[data-render="introBand"]');
+  if (introBand && profile.introBand) {
+    introBand.innerHTML = `<p>${profile.introBand}</p>`;
+  }
+
+  // Best Fit Roles Panel
+  const bestFitContainer = document.querySelector('[data-render="bestFitRoles"]');
+  if (bestFitContainer && profile.bestFitRoles) {
+    bestFitContainer.innerHTML = profile.bestFitRoles.map((role) => `<li>${role}</li>`).join("");
+  }
+
+  // Contact Links Panel
+  const contactLinksContainer = document.querySelector('[data-render="contactLinks"]');
+  if (contactLinksContainer) {
+    const links = [];
+    if (profile.email) {
+      links.push(`<a href="mailto:${profile.email}"><i class="fa-solid fa-envelope"></i> ${profile.email}</a>`);
+    }
+    if (profile.socials) {
+      profile.socials.forEach((s) => {
+        const platformLower = s.platform.toLowerCase();
+        if (platformLower === "whatsapp" || platformLower === "linkedin") {
+          links.push(`<a href="${s.url}" target="_blank" rel="noreferrer"><i class="${s.icon}"></i> ${s.platform}</a>`);
+        }
+      });
+    }
+    if (links.length > 0) {
+      contactLinksContainer.innerHTML = links.join("");
+    }
+  }
+
+  // Footer Copyright Name
+  const copyrightName = document.querySelector('[data-bind="copyrightName"]');
+  if (copyrightName && profile.name) {
+    copyrightName.textContent = profile.name;
+  }
+}
+
 function renderServices() {
   const target = document.querySelector(selectors.services);
+  if (!target) return;
   target.innerHTML = content.services.map((service) => `
     <article class="card reveal">
       <span class="card-icon"><i class="${iconClass(service.icon)}"></i></span>
@@ -191,13 +151,17 @@ function renderServices() {
 
 function renderSkills() {
   const target = document.querySelector(selectors.skills);
-  target.innerHTML = content.skills.map(([icon, label]) => `
-    <span class="skill-pill"><i class="${icon}"></i>${label}</span>
-  `).join("");
+  if (!target) return;
+  target.innerHTML = content.skills.map((skill) => {
+    const icon = Array.isArray(skill) ? skill[0] : skill.icon;
+    const label = Array.isArray(skill) ? skill[1] : skill.label || skill.name;
+    return `<span class="skill-pill"><i class="${icon}"></i>${label}</span>`;
+  }).join("");
 }
 
 function renderExperience() {
   const target = document.querySelector(selectors.experience);
+  if (!target) return;
   target.innerHTML = content.experience.map((item) => `
     <article class="timeline-item reveal">
       <span class="timeline-date">${item.date}</span>
@@ -222,6 +186,7 @@ function projectMedia(project) {
 
 function renderProjects() {
   const target = document.querySelector(selectors.projects);
+  if (!target) return;
   target.innerHTML = content.projects.map((project) => `
     <article class="project-card reveal">
       ${projectMedia(project)}
@@ -229,23 +194,35 @@ function renderProjects() {
         <h3>${project.title}</h3>
         <p>${project.description}</p>
       </div>
-      <div class="project-tags">${project.tags.map((tag) => `<span>${tag}</span>`).join("")}</div>
+      <div class="project-tags">${(project.tags || []).map((tag) => `<span>${tag}</span>`).join("")}</div>
       ${project.link ? `<a class="project-link" href="${project.link}" target="_blank" rel="noreferrer">View project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>` : ""}
     </article>
   `).join("");
 }
 
+function credentialMedia(credential) {
+  if (credential.image) {
+    const img = `<img src="${credential.image}" alt="${credential.title} credential">`;
+    return credential.link
+      ? `<a href="${credential.link}" target="_blank" rel="noreferrer">${img}</a>`
+      : `<div>${img}</div>`;
+  }
+
+  return `<span class="card-icon"><i class="${iconClass(credential.icon)}"></i></span>`;
+}
+
 function renderCredentials() {
   const target = document.querySelector(selectors.credentials);
+  if (!target) return;
   target.innerHTML = content.credentials.map((credential) => `
     <article class="credential-card reveal">
-      <a href="${credential.link}" target="_blank" rel="noreferrer"><img src="${credential.image}" alt="${credential.title} certificate"></a>
+      ${credentialMedia(credential)}
       <span class="credential-date">${credential.date}</span>
       <div>
         <h3>${credential.title}</h3>
         <p>${credential.description}</p>
       </div>
-      <a class="credential-link" href="${credential.link}" target="_blank" rel="noreferrer">Open certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      ${credential.link ? `<a class="credential-link" href="${credential.link}" target="_blank" rel="noreferrer">Open credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>` : ""}
     </article>
   `).join("");
 }
@@ -256,6 +233,8 @@ function initNavigation() {
   const toggle = document.querySelector("[data-nav-toggle]");
   const links = [...document.querySelectorAll(".site-nav a")];
   const sections = links.map((link) => document.querySelector(link.getAttribute("href"))).filter(Boolean);
+
+  if (!header || !nav || !toggle) return;
 
   toggle.addEventListener("click", () => {
     const isOpen = nav.classList.toggle("is-open");
@@ -304,6 +283,7 @@ function initReveal() {
 
 function initContactForm() {
   const form = document.querySelector("[data-contact-form]");
+  if (!form) return;
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     const data = new FormData(form);
@@ -312,11 +292,13 @@ function initContactForm() {
     const message = data.get("message");
     const subject = encodeURIComponent(`Portfolio inquiry from ${name}`);
     const body = encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`);
-    window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
+    const targetEmail = profile.email || "sheehanandya001@gmail.com";
+    window.location.href = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
   });
 }
 
 function init() {
+  renderProfile();
   renderServices();
   renderSkills();
   renderExperience();
@@ -325,7 +307,8 @@ function init() {
   initNavigation();
   initReveal();
   initContactForm();
-  document.querySelector("[data-year]").textContent = new Date().getFullYear();
+  const yearElem = document.querySelector("[data-year]");
+  if (yearElem) yearElem.textContent = new Date().getFullYear();
 }
 
 document.addEventListener("DOMContentLoaded", init);
