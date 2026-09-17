@@ -66,8 +66,8 @@ window.portfolioConfig = {
   services: [
     {
       icon: "fa-solid fa-code",
-      title: ".NET Web & App Development",
-      description: "Build clean web, backend, and desktop applications with practical architecture and maintainable C#/.NET code."
+      title: "Web & App Development",
+      description: "Build clean web, backend, and desktop applications with practical architecture and maintainable code."
     },
     {
       icon: "fa-solid fa-terminal",
