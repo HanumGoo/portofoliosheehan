@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sheehan Andya portfolio - software engineer focused on .NET, C#, backend systems, scripting, and automation tools.">
-  <meta name="theme-color" content="#f1c40f">
-  <title>Sheehan Andya | Software Engineer</title>
+  <meta name="description" content="Sheehan Andya is a Desktop App & Web Developer experienced with C#/.NET, Go, Python, backend systems, and automation tools.">
+  <meta name="theme-color" content="#f6f5f1">
+  <title>Sheehan Andya | Desktop App &amp; Web Developer</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23050505'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' font-family='Arial,sans-serif' font-size='26' font-weight='800' fill='%23f1c40f'%3ESH%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,12 +21,9 @@
         <span class="brand-mark" data-bind="brandMark">SH</span>
         <span class="brand-copy">
           <strong data-bind="brandName">Sheehan Andya</strong>
-          <small data-bind="brandRole">C# .NET Developer</small>
+          <small data-bind="brandRole">Desktop App &amp; Web Developer</small>
         </span>
       </a>
-      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
-        <i class="fa-solid fa-bars"></i>
-      </button>
       <nav class="site-nav" data-nav>
         <a href="#home">Home</a>
         <a href="#services">Services</a>
@@ -36,14 +33,36 @@
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
+      <div class="header-actions">
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-expanded="false" aria-controls="themeMenu" aria-label="Choose portfolio theme" title="Choose portfolio theme"><i class="fa-solid fa-palette" aria-hidden="true"></i></button>
+        <div class="theme-menu" id="themeMenu" data-theme-menu hidden role="group" aria-label="Portfolio themes">
+          <span class="theme-menu-title">Choose a portfolio style</span>
+          <button type="button" data-theme-option="formal" aria-pressed="true"><span class="theme-swatch formal-swatch"></span><span><strong>Formal</strong><small>Refined &amp; professional</small></span><i class="fa-solid fa-check" aria-hidden="true"></i></button>
+          <button type="button" data-theme-option="cool" aria-pressed="false"><span class="theme-swatch cool-swatch"></span><span><strong>Cool</strong><small>Colorful &amp; expressive</small></span><i class="fa-solid fa-check" aria-hidden="true"></i></button>
+          <button type="button" data-theme-option="creative" aria-pressed="false"><span class="theme-swatch creative-swatch"></span><span><strong>Creative</strong><small>Terminal-inspired</small></span><i class="fa-solid fa-check" aria-hidden="true"></i></button>
+        </div>
+      </div>
     </header>
     <main>
       <section class="hero section" id="home">
-        <div class="hero-copy reveal">
-          <p class="eyebrow" data-bind="heroEyebrow">Available for any C# .NET engineering roles</p>
+        <div class="hero-ambient" aria-hidden="true">
+          <svg viewBox="0 0 1200 700" preserveAspectRatio="none" focusable="false">
+            <path class="circuit-base" d="M70 530h175l78-78h185l78-78h165l78-78h220M370 530l74-74h120l74-74M665 374v-95l72-72h110M925 296h86l76-76" />
+            <path class="circuit-flow" d="M70 530h175l78-78h185l78-78h165l78-78h220M370 530l74-74h120l74-74M665 374v-95l72-72h110M925 296h86l76-76" />
+            <circle class="circuit-node node-one" cx="245" cy="530" r="4" />
+            <circle class="circuit-node node-two" cx="586" cy="374" r="4" />
+            <circle class="circuit-node node-three" cx="925" cy="296" r="4" />
+            <circle class="circuit-node node-four" cx="1011" cy="296" r="3" />
+          </svg>
+        </div>
+        <div class="hero-copy reveal reveal--left">
+          <p class="eyebrow" data-bind="heroEyebrow">Open to desktop application and web development roles</p>
           <h2 data-bind="heroName">Sheehan Andya</h2>
-          <h3 data-bind="heroRole">C# .NET Developer</h3>
-          <p class="hero-summary" data-bind="heroSummary"><i>Building reliable automation, backend logic, and web tools using C# .NET with a clean engineering mindset</i>.</p>
+          <h3 data-bind="heroRole">Desktop App &amp; Web Developer</h3>
+          <p class="hero-summary" data-bind="heroSummary"><i>Building desktop applications and web tools, with experience in C#/.NET and growing skills in Go and Python.</i></p>
           <div class="hero-actions">
             <a class="btn btn-primary" data-bind="heroContactBtn" href="mailto:sheehanandya001@gmail.com"><i class="fa-solid fa-envelope"></i>Contact Me</a>
             <a class="btn btn-secondary" href="./assets/CV ATS - FSD - Sheehan Andya.pdf" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-arrow-down"></i>Resume</a>
@@ -55,7 +74,7 @@
             <a href="https://wa.me/6289637288051" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
-        <div class="hero-visual reveal">
+        <div class="hero-visual reveal reveal--right">
           <div class="portrait-frame" data-render="portrait"><img src="./mainSecond3.png" alt="Portrait of Sheehan Andya"></div>
           <div class="availability-card" data-render="statusCard"><span class="status-dot"></span><div><strong>Core focus</strong><p>.NET, C#, backend, automation, Excel tooling</p></div></div>
           <div class="metric-strip" aria-label="Portfolio highlights" data-render="metrics">
@@ -65,15 +84,15 @@
           </div>
         </div>
       </section>
-      <section class="section intro-band reveal" aria-label="Professional summary" data-render="introBand"><p>My strongest lane is C#/.NET automation, supported by full-stack fundamentals and practical database experience.</p></section>
-      <section class="section" id="services"><div class="section-heading reveal"><p class="eyebrow">What I can deliver</p><h2>Engineering services for practical business problems.</h2></div><div class="card-grid feature-grid" data-render="services"></div></section>
-      <section class="section skills-section" id="skills"><div class="section-heading reveal"><p class="eyebrow">Technical stack</p><h2>Tools I use to ship maintainable solutions.</h2></div><div class="skills-layout"><div class="skill-cloud reveal" data-render="skills"></div><div class="stack-panel reveal"><h3>Best fit roles</h3><ul data-render="bestFitRoles"><li>Junior / Associate Software Engineer</li><li>.NET Developer</li><li>Backend Developer</li><li>Automation Engineer</li><li>Script Engineer</li></ul></div></div></section>
-      <section class="section" id="experience"><div class="section-heading reveal"><p class="eyebrow">Experience</p><h2>From tax workflows to custom automation software.</h2></div><div class="timeline" data-render="experience"></div></section>
-      <section class="section" id="projects"><div class="section-heading reveal"><p class="eyebrow">Selected work</p><h2>My Projects</h2></div><div class="project-grid" data-render="projects"></div></section>
-      <section class="section" id="education"><div class="section-heading reveal"><p class="eyebrow">Education & certificates</p><h2>My Educations & Certificates</h2></div><div class="credential-grid" data-render="credentials"></div></section>
-      <section class="section contact-section" id="contact"><div class="contact-panel reveal"><div><p class="eyebrow">Contact</p><h2>Call me in!</h2><p>Send a quick message for software engineering, backend, automation, or .NET opportunities.</p><div class="contact-links" data-render="contactLinks"><a href="mailto:sheehanandya001@gmail.com"><i class="fa-solid fa-envelope"></i> sheehanandya001@gmail.com</a><a href="https://wa.me/6289637288051" target="_blank" rel="noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a><a href="https://www.linkedin.com/in/sheehanandya" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></div></div><form class="contact-form" data-contact-form><label><span>Name</span><input type="text" name="name" placeholder="Your name" required></label><label><span>Email</span><input type="email" name="email" placeholder="your@email.com" required></label><label><span>Message</span><textarea name="message" rows="5" placeholder="Tell me about the role or project" required></textarea></label><button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i>Send Message</button></form></div></section>
+      <section class="section intro-band reveal reveal--up" aria-label="Professional summary" data-render="introBand"><p>My strongest lane is C#/.NET automation, supported by full-stack fundamentals and practical database experience.</p></section>
+      <section class="section" id="services"><div class="section-heading reveal reveal--up"><p class="eyebrow">What I can deliver</p><h2>Engineering services for practical business problems.</h2></div><div class="card-grid feature-grid" data-render="services"></div></section>
+      <section class="section skills-section" id="skills"><div class="section-heading reveal reveal--left"><p class="eyebrow">My toolkit</p><h2>The tools behind my work.</h2><p class="section-description">Browse by area to see what each tool helps me build.</p></div><div class="toolkit-panel reveal reveal--up" data-render="skills"></div></section>
+      <section class="section" id="experience"><div class="section-heading reveal reveal--left"><p class="eyebrow">Experience</p><h2>From tax workflows to custom automation software.</h2></div><div class="timeline" data-render="experience"></div></section>
+      <section class="section" id="projects"><div class="section-heading reveal reveal--up"><p class="eyebrow">Selected work</p><h2>A few things I’ve built.</h2></div><div class="project-grid" data-render="projects"></div></section>
+      <section class="section" id="education"><div class="section-heading reveal reveal--right"><p class="eyebrow">Education & certificates</p><h2>My Educations & Certificates</h2></div><div class="credential-grid" data-render="credentials"></div></section>
+      <section class="section contact-section" id="contact"><div class="contact-panel"><div class="reveal reveal--left"><p class="eyebrow">Contact</p><h2>Call me in!</h2><p>Send a quick message for software engineering, backend, automation, or .NET opportunities.</p><div class="contact-links" data-render="contactLinks"><a href="mailto:sheehanandya001@gmail.com"><i class="fa-solid fa-envelope"></i> sheehanandya001@gmail.com</a><a href="https://wa.me/6289637288051" target="_blank" rel="noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a><a href="https://www.linkedin.com/in/sheehanandya" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></div></div><form class="contact-form reveal reveal--right" data-contact-form><label><span>Name</span><input type="text" name="name" placeholder="Your name" required></label><label><span>Email</span><input type="email" name="email" placeholder="your@email.com" required></label><label><span>Message</span><textarea name="message" rows="5" placeholder="Tell me about the role or project" required></textarea></label><button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i>Send Message</button></form></div></section>
     </main>
-    <footer class="site-footer"><p>&copy; <span data-year></span> <span data-bind="copyrightName">Sheehan Andya</span>. All rights reserved.</p><a href="#home">Back to top</a></footer>
+    <footer class="site-footer reveal reveal--up"><p>&copy; <span data-year></span> <span data-bind="copyrightName">Sheehan Andya</span>. All rights reserved.</p><a href="#home">Back to top</a></footer>
   </div>
   <script src="config.js"></script>
   <script src="script.js"></script>

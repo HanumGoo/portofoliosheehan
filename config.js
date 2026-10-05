@@ -5,10 +5,10 @@ window.portfolioConfig = {
   profile: {
     name: "Sheehan Andya",
     initials: "SH",
-    role: "C# .NET Developer",
-    eyebrow: "Available for any C# .NET engineering roles",
-    summary: "Building reliable automation, backend logic, and web tools using C# .NET with a clean engineering mindset.",
-    introBand: "My strongest lane is C#/.NET automation, supported by full-stack fundamentals and practical database experience.",
+    role: "Desktop App & Web Developer",
+    eyebrow: "Open to desktop application and web development roles",
+    summary: "Building desktop applications and web tools, with experience in C#/.NET and growing skills in Go and Python.",
+    introBand: "Desktop App & Web Developer experienced with C#/.NET, and also working with Go and Python across practical software projects.",
     email: "sheehanandya001@gmail.com",
     resumeUrl: "./CV ATS - FSD - Sheehan AndyaLSNew.pdf",
     avatar: "./mainSecond3.png",
@@ -67,17 +67,32 @@ window.portfolioConfig = {
     {
       icon: "fa-solid fa-code",
       title: "Web & App Development",
-      description: "Build clean web, backend, and desktop applications with practical architecture and maintainable code."
+      description: "Purpose-built websites and desktop apps, shaped around the people who use them and the work they need to get done.",
+      details: [
+        "Responsive pages and clear, easy-to-follow interfaces",
+        "Desktop tools, forms, and workflows tailored to a team’s needs",
+        "Backend logic and database connections to keep information organized"
+      ]
     },
     {
       icon: "fa-solid fa-terminal",
       title: "Script Engineering",
-      description: "Automate repetitive workflows with scripts, utilities, and data-processing logic that reduce manual effort."
+      description: "Small, focused scripts and utilities that take repetitive computer work off someone’s hands.",
+      details: [
+        "Read, clean, and transform data from files and spreadsheets",
+        "Automate repeatable steps across folders, apps, and data sources",
+        "Produce clear outputs so it’s easy to see what was processed"
+      ]
     },
     {
       icon: "fa-solid fa-gears",
       title: "Business Process Automation",
-      description: "Turn tax, finance, Excel, PDF, and database workflows into structured tools teams can rely on daily."
+      description: "Connect everyday admin and data tasks into a smoother process, with less copying and re-entering information.",
+      details: [
+        "Validate and move information between Excel, PDFs, and databases",
+        "Generate consistent spreadsheets and business documents",
+        "Replace manual hand-offs with reliable, repeatable steps"
+      ]
     }
   ],
 
@@ -85,23 +100,25 @@ window.portfolioConfig = {
   // Skills / Tech Tools
   // ------------------------------------------------------------------
   skills: [
-    ["devicon-csharp-plain", "C#"],
-    ["devicon-dotnetcore-plain", ".NET"],
-    ["fa-brands fa-php", "PHP"],
-    ["fa-brands fa-laravel", "Laravel"],
-    ["fa-solid fa-database", "Entity Framework"],
-    ["fa-solid fa-database", "MySQL"],
-    ["devicon-postgresql-plain", "PostgreSQL"],
-    ["devicon-microsoftsqlserver-plain", "SQL Server"],
-    ["fa-solid fa-file-excel", "ClosedXML / Excel Automation"],
-    ["fa-brands fa-js", "JavaScript"],
-    ["fa-brands fa-html5", "HTML"],
-    ["fa-brands fa-css3-alt", "CSS"],
-    ["fa-brands fa-react", "React"],
-    ["fa-brands fa-node-js", "Node.js"],
-    ["fa-solid fa-server", "Express"],
-    ["fa-solid fa-robot", "RPA Logic"],
-    ["fa-solid fa-bolt", "PowerShell & Batch"]
+    ["devicon-csharp-plain", "C#", "languages"],
+    ["devicon-dotnetcore-plain", ".NET", "backend"],
+    ["devicon-go-plain", "Go / Golang", "languages"],
+    ["devicon-python-plain", "Python", "languages"],
+    ["fa-brands fa-php", "PHP", "languages"],
+    ["fa-brands fa-laravel", "Laravel", "web"],
+    ["fa-solid fa-database", "Entity Framework", "backend"],
+    ["fa-solid fa-database", "MySQL", "backend"],
+    ["devicon-postgresql-plain", "PostgreSQL", "backend"],
+    ["devicon-microsoftsqlserver-plain", "SQL Server", "backend"],
+    ["fa-solid fa-file-excel", "ClosedXML / Excel Automation", "automation"],
+    ["fa-brands fa-js", "JavaScript", "languages"],
+    ["fa-brands fa-html5", "HTML", "web"],
+    ["fa-brands fa-css3-alt", "CSS", "web"],
+    ["fa-brands fa-react", "React", "web"],
+    ["fa-brands fa-node-js", "Node.js", "web"],
+    ["fa-solid fa-server", "Express", "web"],
+    ["fa-solid fa-robot", "RPA Logic", "automation"],
+    ["fa-solid fa-bolt", "PowerShell & Batch", "automation"]
   ],
 
   // ------------------------------------------------------------------
